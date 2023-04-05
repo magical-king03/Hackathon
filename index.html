@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-container">
+            <h2 class="title">My Todo's</h2>
+            <div class="out-content" id="out">
+                <img src="Todo.jpg" alt="" class="img">
+                <h2 style="font-weight: 630;">You have no task today</h2>
+                <div class="inside-content" id="in">
+                    <p>You have no new tasks today</p>
+                    <p>Start adding your new tasks!</p>
+                </div>               
+            </div>
+            <div id="output" class="op-content"></div>
+        </div>
+        <div class="bottom-container">
+            <input type="text" placeholder="Task name here" class="in" style="font-size: 20px;" id="task"> 
+            <br>
+            <input type="text" placeholder="Description" class="in" style="font-size: 15px;" id="desc">
+            <br>    
+            <div class="submit">
+                <input type="type" placeholder="Due Date" class="date" onfocus="(this.type='datetime-local')" id="duedate">
+                <button class="btn" onclick="register()">Add task</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
